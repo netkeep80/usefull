@@ -17,7 +17,7 @@ pip install -e .
 ## Usage
 
 ```python
-from usefull import slugify, truncate, flatten, chunk, is_email, is_empty
+from usefull import slugify, truncate, flatten, chunk, is_email, is_empty, clamp, lerp
 
 # Text utilities
 print(slugify("Hello World!"))  # "hello-world"
@@ -33,6 +33,10 @@ print(unique([1, 2, 2, 3, 1]))  # [1, 2, 3]
 print(is_email("user@example.com"))  # True
 print(is_url("https://example.com"))  # True
 print(is_empty(""))  # True
+
+# Numeric utilities
+print(clamp(15, 0, 10))  # 10
+print(lerp(0, 100, 0.5))  # 50.0
 ```
 
 ## Available Functions
@@ -57,6 +61,13 @@ print(is_empty(""))  # True
 - `is_url(value)` - Check if string is valid URL format
 - `is_empty(value)` - Check if value is empty (None, "", [], {})
 
+### Numeric Utilities (`usefull.numeric`)
+
+- `clamp(value, min_value, max_value)` - Constrain value within a range
+- `lerp(start, end, t)` - Linear interpolation between two values
+- `round_to(value, precision)` - Round to arbitrary precision
+- `percentage(value, total)` - Calculate percentage of a value
+
 ## Running Tests
 
 ```bash
@@ -69,6 +80,7 @@ python -m pytest tests/ -v
 |-------|-------------|------|
 | ISSUE-1 | Set up task tracking system | 2026-01-29 |
 | ISSUE-2 | Add useful content to the repository | 2026-01-29 |
+| ISSUE-3 | Add numeric utilities module | 2026-01-29 |
 
 ## Contributing
 

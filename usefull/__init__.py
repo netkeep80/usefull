@@ -21,6 +21,12 @@ from usefull.validation import (
     is_url,
     is_empty,
 )
+from usefull.numeric import (
+    clamp,
+    lerp,
+    round_to,
+    percentage,
+)
 
 __version__ = "0.1.0"
 __all__ = [
@@ -38,4 +44,9 @@ __all__ = [
     "is_email",
     "is_url",
     "is_empty",
+    # Numeric utilities
+    "clamp",
+    "lerp",
+    "round_to",
+    "percentage",
 ]

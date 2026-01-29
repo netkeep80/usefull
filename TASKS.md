@@ -31,6 +31,23 @@ This file contains the list of tasks/issues to be completed for the project.
 
 ---
 
+### ISSUE-3: Add numeric utilities module
+**Description:** Extend the utility library with commonly needed numeric/math helper functions.
+
+**Requirements:**
+- Create a numeric utilities module (usefull/numeric.py)
+- Include clamp function to constrain values within a range
+- Include lerp function for linear interpolation
+- Include round_to function for rounding to arbitrary precision
+- Include percentage function to calculate percentage of a value
+- Add comprehensive unit tests
+- Update __init__.py to export new functions
+- Update README.md with documentation
+
+**Status:** Completed
+
+---
+
 ## How to Use This File
 
 1. Find the next **Pending** task in this file
